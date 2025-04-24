@@ -15,7 +15,7 @@ export const GameMobile: VFC = () => {
                 <div className="flex flex-col">
                     <GamePieces
                         className="p-1"
-                        label="Hold"
+                        label="키핑"
                         reverse={true}
                         selectPieces={GameSelectors.hold}
                     />
@@ -24,7 +24,7 @@ export const GameMobile: VFC = () => {
                 <div className="flex flex-col">
                     <GamePieces
                         className="p-1"
-                        label="Next"
+                        label="다음"
                         reverse={true}
                         selectPieces={GameSelectors.next}
                     />

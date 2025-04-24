@@ -21,7 +21,7 @@ export const OptionsAudio: FC = () => {
     const dispatch = useAppDispatch();
     return (
         <>
-            <div>Sound Fx</div>
+            <div>효과음설정</div>
             <UiButton
                 className="flex rounded-full text-[12px] p-2 justify-center"
                 active={sound}
@@ -29,13 +29,13 @@ export const OptionsAudio: FC = () => {
             >
                 {SOUND_ICON[sound.toString()]}
             </UiButton>
-            <div>Sound Fx Volume</div>
+            <div>효과음 볼륨</div>
             <UiSelect
                 options={VOLUME_OPTIONS}
                 value={soundVolume}
                 onChange={(value) => dispatch(AppActions.soundVolume(value))}
             />
-            <div>Music</div>
+            <div>배경음</div>
             <UiButton
                 className="flex rounded-full text-[12px] p-2 justify-center"
                 active={music}
@@ -43,13 +43,13 @@ export const OptionsAudio: FC = () => {
             >
                 {MUSIC_ICON[music.toString()]}
             </UiButton>
-            <div>Music Volume</div>
+            <div>배경음 볼륨</div>
             <UiSelect
                 options={VOLUME_OPTIONS}
                 value={musicVolume}
                 onChange={(value) => dispatch(AppActions.musicVolume(value))}
             />
-            <div>Music Type</div>
+            <div>음악타입</div>
             <UiSelect
                 options={MUSIC_TYPES}
                 value={musicType}

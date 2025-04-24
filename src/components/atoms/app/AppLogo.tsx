@@ -20,7 +20,7 @@ export const AppLogo: FC<AppLogoProps & ClassNameProps> = ({
             data-testid="app-logo"
             className={classNames('flex flex-col items-center', className)}
         >
-            <div className="font-mono text-2xl">welcome to</div>
+            <div className="font-mono text-2xl">캠핑친구</div>
             <div className="flex text-4xl font-logo font-bold">
                 {letters.map(({key, char}) => (
                     <div

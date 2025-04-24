@@ -19,15 +19,15 @@ export const GameNumbers: VFC<GameNumbersProps & ClassNameProps> = ({
 
     return (
         <div className={classNames(className, 'flex')}>
-            <GameNumber label="Score" value={score} reverse={reverse} />
+            <GameNumber label="점수" value={score} reverse={reverse} />
             <GameNumber
-                label="Level"
+                label="레벨"
                 value={level}
                 reverse={reverse}
                 primary={false}
             />
             <GameNumber
-                label="Lines"
+                label="라인"
                 value={lines}
                 reverse={reverse}
                 primary={false}

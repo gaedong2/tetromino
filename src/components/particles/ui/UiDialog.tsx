@@ -1,4 +1,5 @@
-import {Dialog, useMediaQuery} from '@material-ui/core';
+import Dialog from '@mui/material/Dialog';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import classNames from 'classnames';
 import {FC, PropsWithChildren, useMemo} from 'react';
 import {FaArrowLeft} from 'react-icons/fa';

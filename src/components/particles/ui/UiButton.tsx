@@ -1,4 +1,4 @@
-import {Tooltip} from '@material-ui/core';
+import Tooltip from '@mui/material/Tooltip';
 import classNames from 'classnames';
 import {ButtonHTMLAttributes, FC, PropsWithChildren, useMemo, useRef} from 'react';
 import {useUiTheme} from '../contexts/UiThemeContext';

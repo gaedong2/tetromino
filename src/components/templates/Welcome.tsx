@@ -20,16 +20,16 @@ export const Welcome: FC<WelcomeProps> = ({
     const menu: Array<AppMenuItem> = useMemo(() => {
         return [
             {
-                title: 'New Game',
+                title: '새게임',
                 action: GameActions.start(startLevel),
                 active: true
             },
-            {title: `Level: ${startLevel}`, action: AppActions.startLevel()},
+            {title: `레벨: ${startLevel}`, action: AppActions.startLevel()},
             {
-                title: 'High Scores',
+                title: '최고점수',
                 action: AppActions.open(AppDialogType.HIGH_SCORES)
             },
-            {title: 'Options', action: AppActions.open(AppDialogType.OPTIONS)},
+            {title: '옵션', action: AppActions.open(AppDialogType.OPTIONS)},
             {title: 'Credits', action: AppActions.open(AppDialogType.CREDITS)}
         ];
     }, [startLevel]);
@@ -38,7 +38,7 @@ export const Welcome: FC<WelcomeProps> = ({
         <div className="flex flex-col h-full">
             <AppLogo
                 className="mt-auto mb-14"
-                name="Tetrimino"
+                name="캠트리스"
             />
             <AppMenu className="w-44 ml-auto mr-auto" items={menu} />
             <AppDarkMode className="ml-auto mr-auto mt-5 mb-auto" />

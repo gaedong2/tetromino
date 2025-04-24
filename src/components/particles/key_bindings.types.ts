@@ -35,11 +35,11 @@ export const KEY_BINDINGS: Array<keyof KeyBindings> = [
 ];
 
 export const KEY_BINDING_LABELS: Record<keyof KeyBindings, string> = {
-    left: 'Move Left',
-    right: 'Move Right',
-    rotate_left: 'Rotate Left',
-    rotate_right: 'Rotate Right',
-    soft_drop: 'Soft Drop',
-    hard_drop: 'Hard Drop',
-    hold: 'Hold'
+    left: '왼쪽이동',
+    right: '오른쪽이동',
+    rotate_left: '왼쪽회전',
+    rotate_right: '오른쪽회전',
+    soft_drop: '내리기',
+    hard_drop: '빨리내리기',
+    hold: '홀드'
 };

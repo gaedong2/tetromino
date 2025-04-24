@@ -11,7 +11,7 @@ export const OptionsGame: FC = () => {
     const dispatch = useAppDispatch();
     return (
         <>
-            <div>Ghost Piece</div>
+            <div>가상조각</div>
             <UiButton
                 className="flex rounded-full text-[12px] p-2 justify-center"
                 active={ghostPiece}

@@ -4,6 +4,7 @@ import {AppSelectors} from '../../../store/app/app-selectors';
 
 export const useDarkMode = () => {
     const dark = useSelector(AppSelectors.dark);
+
     useEffect(() => {
         const html = document.documentElement;
         if (dark) {
@@ -12,4 +13,6 @@ export const useDarkMode = () => {
             html.classList.remove('dark');
         }
     }, [dark]);
+
+    return { isDarkMode: dark };
 };

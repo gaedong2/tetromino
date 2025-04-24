@@ -28,13 +28,13 @@ export const GameOptions: FC<GameOptionsProps & ClassNameProps> = ({
                     className="mt-3 py-2"
                     onClick={() => dispatch(AppActions.resetScore())}
                 >
-                    Reset High Scores
+                    최고기록 초기화
                 </UiButton>
                 <UiButton
                     className="mt-3 py-2"
                     onClick={() => dispatch(AppActions.resetOptions())}
                 >
-                    Reset Options
+                    옵션 초기화
                 </UiButton>
             </div>
             {darkMode && <AppDarkMode className="ml-auto mr-auto mt-5" />}

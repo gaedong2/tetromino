@@ -59,9 +59,9 @@ export const PauseDialog: FC<PauseDialogProps & Partial<AppDialogControl>> = ({
 
     const menu: Array<AppMenuItem> = useMemo(() => {
         return [
-            {title: 'Continue', action: GameActions.resume(), active: true},
-            {title: 'Restart', action: GameActions.start(startLevel)},
-            {title: 'Quit Game', action: GameActions.quit()}
+            {title: '이어하기', action: GameActions.resume(), active: true},
+            {title: '새로시작', action: GameActions.start(startLevel)},
+            {title: '게임종료', action: GameActions.quit()}
         ];
     }, [startLevel]);
 
