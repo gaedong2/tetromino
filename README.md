@@ -4,7 +4,7 @@
 
 A tetris-style game created with [React](https://reactjs.org/), [Redux](https://react-redux.js.org/) and [TailwindCSS](https://tailwindcss.com/).
 
-## What is it?
+## 뭐하는 기능인가?
 
 For those of you not familiar with Tetris, it's a game where you drop tetromino shapes to create solid rows to score points. Blocks
 fall faster as you increase the level. If there is no more room to drop blocks, then the game is over.
